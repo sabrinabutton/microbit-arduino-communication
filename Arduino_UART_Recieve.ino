@@ -8,7 +8,7 @@
 #define SSD1306_LCDWIDTH  64
 Adafruit_SSD1306 display(OLED_RESET);
 
-char str[4];
+char motion_command;
 
 void setup() {
   
@@ -42,18 +42,38 @@ void loop() {
     display.println("Waiting for String...");
       display.display();
     delay(2500); //allows all serial sent to be received together
-    while (Serial.available() && i < 4) 
+    while (Serial.available() && i < 1) 
     {
-      str[i++] = Serial.read();
-    }
-    str[i++] = '\0';
+      motion_command = Serial.read();
+      
+      if (motion_command == "G")
+      {
+        
+      }
+      else if (motion_command == "S")
+      {
+        
+      }
+      else if (motion_command == "L")
+      {
+        
+      }
+      else if (motion_command == "R")
+      {
+        
+      }
+      else 
+      {
+        motion_command = "Error";
+      }
+    
   }   
 
   if (i > 0) 
   {
       display.setCursor(0, 40);
         display.clearDisplay();
-    display.println(str);
+    display.println("Command recieved!", motion_command);
       display.display();
       delay(3000);
   }

@@ -13,7 +13,7 @@ input.onGesture(Gesture.Shake, function () {
         . # . . .
         `)
     //pause and clear
-    basic.pause(200)
+    basic.pause(300)
     basic.clearScreen()
 })
 // if A is pressed (left button)
@@ -29,7 +29,7 @@ input.onButtonPressed(Button.B, function () {
         . . # . .
         `)
     //pause and clear
-    basic.pause(200)
+    basic.pause(300)
     basic.clearScreen()
 })
 // when A and B are pressed...
@@ -45,7 +45,7 @@ input.onButtonPressed(Button.AB, function () {
         # . . . #
         `)
     //pause and clear
-    basic.pause(200)
+    basic.pause(300)
     basic.clearScreen()
 })
 // if B is pressed (right button)
@@ -61,6 +61,6 @@ input.onButtonPressed(Button.A, function () {
         . . # . .
         `)
     //pause and clear
-    basic.pause(200)
+    basic.pause(300)
     basic.clearScreen()
 })

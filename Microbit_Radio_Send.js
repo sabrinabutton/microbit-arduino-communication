@@ -10,11 +10,15 @@ input.onButtonPressed(Button.AB, function () {
     if (motor_on = 0) {
         //tell other microbit to send "G" for go
         radio.sendString("G")
+        //set motor to on
+        motor_on = 1
     }
     //if the motor is on
     if (motor_on = 1) {
         //tell other microbit to send "G" for stop
         radio.sendString("S")
+        //set motor to off
+        motor_on = 0
     }
 })
 

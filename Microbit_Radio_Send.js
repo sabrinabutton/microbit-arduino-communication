@@ -4,7 +4,6 @@
 input.onGesture(Gesture.Shake, function () {
     // tell other microbit to send "G" for go
     radio.sendString("G")
-    //show user 
     basic.showLeds(`
         . . . . .
         . . . . #
@@ -12,15 +11,13 @@ input.onGesture(Gesture.Shake, function () {
         # . # . .
         . # . . .
         `)
-    //pause and clear
-    basic.pause(300)
+    basic.pause(200)
     basic.clearScreen()
 })
 // if A is pressed (left button)
 input.onButtonPressed(Button.B, function () {
     // tell other microbit to send "R" for right
     radio.sendString("R")
-    //show user 
     basic.showLeds(`
         . . # . .
         . . . # .
@@ -28,15 +25,13 @@ input.onButtonPressed(Button.B, function () {
         . . . # .
         . . # . .
         `)
-    //pause and clear
-    basic.pause(300)
+    basic.pause(200)
     basic.clearScreen()
 })
 // when A and B are pressed...
 input.onButtonPressed(Button.AB, function () {
     // tell other microbit to send "G" for stop
     radio.sendString("S")
-    //show user 
     basic.showLeds(`
         # . . . #
         . # . # .
@@ -44,15 +39,13 @@ input.onButtonPressed(Button.AB, function () {
         . # . # .
         # . . . #
         `)
-    //pause and clear
-    basic.pause(300)
+    basic.pause(200)
     basic.clearScreen()
 })
 // if B is pressed (right button)
 input.onButtonPressed(Button.A, function () {
     // tell other microbit to send "L" for left
     radio.sendString("L")
-    //show user 
     basic.showLeds(`
         . . # . .
         . # . . .
@@ -60,7 +53,7 @@ input.onButtonPressed(Button.A, function () {
         . # . . .
         . . # . .
         `)
-    //pause and clear
-    basic.pause(300)
+    basic.pause(200)
     basic.clearScreen()
 })
+radio.setGroup(1)

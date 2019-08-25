@@ -6,6 +6,7 @@ Creation of a robot using an arduino nano which can communicate with one microbi
 
 ## Diagram
 The robot used in this project is a redesign of the robot used in this project: https://github.com/sabrinabutton/arduino-line-movement
+
 ![alt text] (https://github.com/sabrinabutton/microbit-arduino-communication/blob/master/Arduino-Microbit-Communication-Diagram.png)
 
 ## Notes for Development
